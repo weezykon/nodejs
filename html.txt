@@ -1,0 +1,134 @@
+HTML Basics
+Welcome to HTML Basics. This workshop leads you through the basics of Hyper Text Markup Language
+(HTML). HTML is the building block for web pages. You will learn to use HTML to author an HTML page
+to display in a web browser.
+Objectives:
+By the end of this workshop, you will be able to:
+ Use a text editor to author an HTML document.
+ Be able to use basic tags to denote paragraphs, emphasis or special type.
+ Create hyperlinks to other documents.
+ Create an email link.
+ Add images to your document.
+ Use a table for layout.
+ Apply colors to your HTML document.
+Prerequisites:
+You will need a text editor, such as Notepad and an Internet browser, such as Internet Explorer or
+Netscape.
+Q: What is Notepad and where do I get it?
+A: Notepad is the default Windows text editor. On most Windows systems, click your Start
+button and choose Programs then Accessories. It should be a little blue notebook.
+Mac Users: SimpleText is the default text editor on the Mac. In OSX use TextEdit and change
+the following preferences: Select (in the preferences window) Plain text instead of Rich text and
+then select Ignore rich text commands in HTML files. This is very important because if you don't
+do this HTML codes probably won't work.
+One thing you should avoid using is a word processor (like Microsoft Word) for authoring your HTML
+documents.
+What is an html File?
+HTML is a format that tells a computer how to display a web page. The documents themselves are
+plain text files with special "tags" or codes that a web browser uses to interpret and display
+information on your computer screen.
+ HTML stands for Hyper Text Markup Language
+ An HTML file is a text file containing small markup tags
+ The markup tags tell the Web browser how to display the page
+ An HTML file must have an htm or html file extension
+Try It?
+Open your text editor and type the following text:
+<html>
+<head>
+<title>My First Webpage</title>
+</head>
+<body>
+This is my first homepage. <b>This text is bold</b>
+</body>
+</html>
+
+Save the file as mypage.html. Start your Internet browser. Select Open (or Open Page) in the File
+menu of your browser. A dialog box will appear. Select Browse (or Choose File) and locate the html
+file you just created - mypage.html - select it and click Open. Now you should see an address in the 
+dialog box, for example C:\MyDocuments\mypage.html. Click OK, and the browser will display the
+page. To view how the page should look, visit this web page:
+http://profdevtrain.austincc.edu/html/mypage.html
+Example Explained
+What you just made is a skeleton html document. This is the minimum required information for a web
+document and all web documents should contain these basic components. The first tag in your html
+document is <html>. This tag tells your browser that this is the start of an html document. The last
+tag in your document is </html>. This tag tells your browser that this is the end of the html
+document.
+The text between the <head> tag and the </head> tag is header information. Header information is not
+displayed in the browser window.
+The text between the <title> tags is the title of your document. The <title> tag is used to uniquely
+identify each document and is also displayed in the title bar of the browser window.
+The text between the <body> tags is the text that will be displayed in your browser.
+The text between the <b> and </b> tags will be displayed in a bold font.
+HTM or HTML Extension?
+When you save an HTML file, you can use either the .htm or the .html extension. The .htm extension
+comes from the past when some of the commonly used software only allowed three letter extensions.
+It is perfectly safe to use either .html or .htm, but be consistent. mypage.htm and mypage.html are
+treated as different files by the browser.
+How to View HTML Source
+A good way to learn HTML is to look at how other people have coded their html pages. To find out,
+simply click on the View option in your browsers toolbar and select Source or Page Source. This will
+open a window that shows you the actual HTML of the page. Go ahead and view the source html for
+this page.
+HTML Tags
+What are HTML tags?
+ HTML tags are used to mark-up HTML elements
+ HTML tags are surrounded by the two characters < and >
+ The surrounding characters are called angle brackets
+ HTML tags normally come in pairs like <b> and </b>
+ The first tag in a pair is the start tag, the second tag is the end tag
+ The text between the start and end tags is the element content
+ HTML tags are not case sensitive, <b> means the same as <B>
+Logical vs. Physical Tags
+In HTML there are both logical tags and physical tags. Logical tags are designed to describe (to the
+browser) the enclosed text's meaning. An example of a logical tag is the <strong> </strong> tag. By
+placing text in between these tags you are telling the browser that the text has some greater
+importance. By default all browsers make the text appear bold when in between the <strong> and
+</strong> tags.
+Physical tags on the other hand provide specific instructions on how to display the text they enclose.
+Examples of physical tags include:
+ <b>: Makes the text bold.
+ <big>: Makes the text usually one size bigger than what's around it.
+ <i>: Makes text italic. 
+Physical tags were invented to add style to HTML pages because style sheets were not around, though
+the original intention of HTML was to not have physical tags. Rather than use physical tags to style
+your HTML pages, you should use style sheets.
+HTML Elements
+Remember the HTML example from the previous page:
+<html>
+<head>
+<title>My First Webpage</title>
+</head>
+<body>
+This is my first homepage. <b>This text is bold</b>
+</body>
+</html>
+This is an HTML element:
+<b>This text is bold</b>
+The HTML element begins with a start tag: <b>
+The content of the HTML element is: This text is bold
+The HTML element ends with an end tag: </b>
+The purpose of the <b> tag is to define an HTML element that should be displayed as bold.
+This is also an HTML element:
+<body>
+This is my first homepage. <b>This text is bold</b>
+</body>
+This HTML element starts with the start tag <body>, and ends with the end tag </body>. The purpose
+of the <body> tag is to define the HTML element that contains the body of the HTML document.
+Nested Tags
+You may have noticed in the example above, the <body> tag also contains other tags, like the <b> tab.
+When you enclose an element in with multiple tags, the last tag opened should be the first tag closed.
+For example:
+<p><b><em>This is NOT the proper way to close nested tags.</p></em></b>
+<p><b><em>This is the proper way to close nested tags. </em></b></p>
+Note: It doesn't matter which tag is first, but they must be closed in the proper order.
+Why Use Lowercase Tags?
+You may notice we've used lowercase tags even though I said that HTML tags are not case sensitive.
+<B> means the same as <b>. The World Wide Web Consortium (W3C), the group responsible for
+developing web standards, recommends lowercase tags in their HTML 4 recommendation, and XHTML
+(the next generation HTML) requires lowercase tags.
+Tag Attributes
+Tags can have attributes. Attributes can provide additional information about the HTML elements on
+your page. The <tag> tells the browser to do something, while the attribute tells the browser how to
+do it. For instance, if we add the bgcolor attribute, we can tell the browser that the background color
+of your page should be blue, like this: <body bgcolor="blue">. 
